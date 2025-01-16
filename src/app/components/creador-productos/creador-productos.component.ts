@@ -11,10 +11,10 @@ import { CestaService } from '../../services/cesta.service';
   styleUrl: './creador-productos.component.css'
 })
 export class CreadorProductosComponent {
-  producto : Producto = {};
+  producto : Producto = {};//Es posible porque los atributos de producto son opcionales
   cestaService = inject(CestaService);  
   addProducto(){
     this.cestaService.addProducto(this.producto);
-    this.producto = {};
+    this.producto = {};//Es posible porque los atributos de producto son opcionales
   }
 }
