@@ -11,15 +11,8 @@ import { CestaService } from '../../services/cesta.service';
   styleUrl: './creador-productos.component.css'
 })
 export class CreadorProductosComponent {
-  producto : Producto = {
-    nombre: '',
-    precio: 0,
-    fechaCaducidad: new Date(),
-    EAN: '',
-  };
-
-  cestaService = inject(CestaService);
-  
+  producto : Producto = {};
+  cestaService = inject(CestaService);  
   addProducto(){
     this.cestaService.addProducto(this.producto);
   }
