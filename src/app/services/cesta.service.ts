@@ -11,7 +11,7 @@ export class CestaService {
   constructor() { }
 
   addProducto(producto : Producto) {
-    this.productos.push({...producto});//Operador de desestructuración
+    this.productos.push({...producto});//Operador 'spread' o de propagación
     console.debug(this.productos);
   }
 
