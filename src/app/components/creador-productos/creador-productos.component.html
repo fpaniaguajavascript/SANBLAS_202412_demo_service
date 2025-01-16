@@ -1,0 +1,7 @@
+<div>
+    <input type="text" [(ngModel)]="producto.nombre" placeholder="Nombre del producto">
+    <input type="number" [(ngModel)]="producto.precio" placeholder="Precio">
+    <input type="date"[(ngModel)]="producto.fechaCaducidad" placeholder="Fecha de caducidad">
+    <input type="text" [(ngModel)]="producto.EAN" placeholder="EAN">
+    <button (click)="addProducto()">Crear producto</button>
+</div>
