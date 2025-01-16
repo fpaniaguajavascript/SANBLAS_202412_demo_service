@@ -1,3 +1,11 @@
 <div>
-    <div *ngFor="let producto of cestaService.getProductos()">{{producto.nombre}}</div>
+    <div *ngFor="let producto of cestaService.getProductos()">
+        {{producto.nombre}}
+        -
+        {{producto.precio}}
+        -
+        {{producto.fechaCaducidad}}
+        -
+        {{producto.EAN}}
+    </div>
 </div>

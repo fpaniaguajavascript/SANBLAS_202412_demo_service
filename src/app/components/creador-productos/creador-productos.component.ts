@@ -15,5 +15,6 @@ export class CreadorProductosComponent {
   cestaService = inject(CestaService);  
   addProducto(){
     this.cestaService.addProducto(this.producto);
+    this.producto = {};
   }
 }

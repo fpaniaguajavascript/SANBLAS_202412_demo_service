@@ -12,7 +12,7 @@ export class CestaService {
 
   addProducto(producto : Producto) {
     this.productos.push({...producto});//Operador de desestructuración
-    console.log(this.productos);
+    console.debug(this.productos);
   }
 
   removeProducto(producto : Producto) {
